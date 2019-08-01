@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:Syncfusion ="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.DisplayScore">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+               
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"  />
+                <RowDefinition Height="30"  />
+                <RowDefinition Height="30"  />
+                
+               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"  />
+                
+                
+
+
+
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Players" Grid.Column="1" Grid.Row="1" BackgroundColor="Aqua"/>
+            <Label Text="Set Score" Grid.Column="3" Grid.Row="1"/>
+            <Label Text="Game Score" Grid.Column="5" Grid.Row="1"/>
+            <Label Text="Player 1" Grid.Column="1" Grid.Row="2"/>
+            <Label Text="Player 2" Grid.Column="1" Grid.Row="3"/>
+            <Label Text="0" Grid.Column="3" Grid.Row="2" x:Name="SetScoreP1"/>
+            <Label Text="0" Grid.Column="3" Grid.Row="3" x:Name="SetScoreP2"/>
+            <Label Text="0" Grid.Column="5" Grid.Row="2" x:Name="GameScoreP1"/>
+            <Label Text="0" Grid.Column="5" Grid.Row="3" x:Name="GameScoreP2"/>
+            <Label Text="" Grid.Column="3" Grid.Row="4" x:Name="Inference"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
